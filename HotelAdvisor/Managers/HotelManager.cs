@@ -93,6 +93,10 @@ namespace HotelAdvisor.Managers
                 Hotel hotel = dbContext.Hotels.Include(h => h.Comments)
                     .FirstOrDefault(h => h.Id == hotelId);
 
+                if (hotel == null)
+                {
+                    return null;
+                }
 
                 hotelDetails =
                     new HotelDetailsViewModel()
@@ -104,7 +108,7 @@ namespace HotelAdvisor.Managers
                         Image = hotel.Image,
                         Comments = hotel.Comments.Select(co => new CommentViewModel()
                         {
-                            UserName = co.User.UserName,
+                            UserName = co.User == null ? "anonymous" : co.User.UserName,
                             Text = co.Text,
                             Title = co.Title,
                             DateAdded = co.DateAdded,

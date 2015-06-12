@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Filip\Desktop\Code9 2015 WebAPI\3_HotelAdvisor_WebAPI\HotelAdvisor\obj\Release\Package\PackageTmp" managedRuntimeVersion="v4.0" />
+  <setAcl path="C:\Users\Filip\Desktop\Code9 2015 WebAPI\3_HotelAdvisor_WebAPI\HotelAdvisor\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\Filip\Desktop\Code9 2015 WebAPI\3_HotelAdvisor_WebAPI\HotelAdvisor\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

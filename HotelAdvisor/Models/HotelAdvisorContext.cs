@@ -9,7 +9,8 @@ namespace HotelAdvisor.Models
 {
     public class HotelAdvisorContext : IdentityDbContext<ApplicationUser>
     {
-        public HotelAdvisorContext() : base("DefaultConnection")
+        public HotelAdvisorContext()
+            : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
 
